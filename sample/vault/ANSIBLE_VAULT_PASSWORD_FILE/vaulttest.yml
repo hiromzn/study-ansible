@@ -1,0 +1,12 @@
+---
+- name: add user
+  hosts: all
+  gather_facts: true
+  user: hmizuno
+  become: true
+  vars_files:
+    - vars
+
+  tasks:
+    - name: dummy
+      debug: var=ansible_become_pass

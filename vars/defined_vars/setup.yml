@@ -1,0 +1,27 @@
+---
+- name: defined vars.
+  hosts: localonly
+  connection: local
+  user: hmizuno
+
+  tasks:
+    - name: show ansible_version
+      debug: var=ansible_version
+
+    - name: show group_names
+      debug: var=group_names
+
+    - name: show groups
+      debug: var=groups
+
+    - name: show play_hosts
+      debug: var=play_hosts
+
+    - name: show inventory_hostname
+      debug: var=inventory_hostname
+
+    - name: show hostvars[inventory_hostname]
+      debug: var=hostvars[inventory_hostname]
+
+    - name: show hostvars
+      debug: var=hostvars

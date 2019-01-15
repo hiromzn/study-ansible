@@ -1,0 +1,25 @@
+---
+- name: add user
+  hosts: all
+  gather_facts: true
+  user: hmizuno
+  become: true
+  vars_files:
+    - vars
+
+  tasks:
+#    - name: show all info
+#      debug: var=hostvars[inventory_hostname]
+
+    - name: add a new user      #Linuxユーザの作成
+      user: name=testuser2 state=present
+
+    - name: mkdir .ssh          #.sshフォルダの作成
+      file: dest=/home/testuser2/.ssh/ state=directory owner=testuser2 group=testuser2 mode=700
+
+    - name: add authorized keys #.ssh以下にauthorized_keysファイルの作成
+      file: dest=/home/testuser2/.ssh/authorized_keys state=touch owner=testuser2 group=testuser2 mode=600
+
+    - name: copy publickey     #公開鍵を貼付け
+      copy: src=~/.ssh/id_rsa.pub dest=/home/testuser2/.ssh/authorized_keys
+

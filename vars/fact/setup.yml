@@ -1,0 +1,7 @@
+---
+- name: hello ansible ( date ... )
+  hosts: managed_node
+  gather_facts: True
+
+  tasks:
+    - debug: var=ansible_destribution

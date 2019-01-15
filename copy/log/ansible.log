@@ -1,0 +1,362 @@
+2018-12-23 01:45:38,209 p=4181 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:45:38,217 p=4181 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:45:38,693 p=4181 u=hmizuno |  fatal: [10.0.1.5]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+2018-12-23 01:45:38,694 p=4181 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:45:38,695 p=4181 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:45:38,695 p=4181 u=hmizuno |  10.0.1.5                   : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:46:20,005 p=4241 u=hmizuno |  ERROR! Incorrect options passed
+2018-12-23 01:46:41,131 p=4272 u=hmizuno |  ERROR! Incorrect options passed
+2018-12-23 01:46:47,726 p=4279 u=hmizuno |  ERROR! Incorrect options passed
+2018-12-23 01:48:05,525 p=4347 u=hmizuno |   [WARNING]: module ansible-user not found in: /home/hmizuno/.ansible/plugins/mo
+dules:/usr/share/ansible/plugins/modules:/usr/lib/python2.7/site-
+packages/ansible/modules
+
+2018-12-23 01:49:22,715 p=4442 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:49:22,724 p=4442 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:49:23,169 p=4442 u=hmizuno |  fatal: [10.0.1.5]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+2018-12-23 01:49:23,171 p=4442 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:49:23,171 p=4442 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:49:23,172 p=4442 u=hmizuno |  10.0.1.5                   : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:50:48,594 p=4550 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:50:48,604 p=4550 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:50:49,125 p=4550 u=hmizuno |  fatal: [10.0.1.5]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+2018-12-23 01:50:49,127 p=4550 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:50:49,127 p=4550 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:50:49,127 p=4550 u=hmizuno |  10.0.1.5                   : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:51:25,937 p=4604 u=hmizuno |   [WARNING]: Could not match supplied host pattern, ignoring: all
+
+2018-12-23 01:51:25,938 p=4604 u=hmizuno |   [WARNING]: provided hosts list is empty, only localhost is available
+
+2018-12-23 01:51:26,209 p=4604 u=hmizuno |   [WARNING]: Could not match supplied host pattern, ignoring: managed_node
+
+2018-12-23 01:51:26,210 p=4604 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:51:26,210 p=4604 u=hmizuno |  skipping: no hosts matched
+2018-12-23 01:51:26,210 p=4604 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:51:47,121 p=4639 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:51:47,129 p=4639 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:51:49,840 p=4639 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+2018-12-23 01:51:49,842 p=4639 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:51:49,842 p=4639 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:51:49,842 p=4639 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:53:43,160 p=4771 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 01:53:43,160 p=4771 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 01:53:43,161 p=4771 u=hmizuno |  ERROR! the playbook: i could not be found
+2018-12-23 01:53:58,352 p=4786 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 01:53:58,352 p=4786 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 01:53:58,359 p=4786 u=hmizuno |  Parsed /home/hmizuno/git/study-ansible/copy/hosts inventory source with ini plugin
+2018-12-23 01:53:58,596 p=4786 u=hmizuno |  PLAYBOOK: setup.yml ************************************************************
+2018-12-23 01:53:58,596 p=4786 u=hmizuno |  1 plays in setup.yml
+2018-12-23 01:53:58,624 p=4786 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:53:58,632 p=4786 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:53:58,936 p=4786 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-12-23 01:53:59,017 p=4786 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", 
+    "unreachable": true
+}
+2018-12-23 01:53:59,019 p=4786 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:53:59,019 p=4786 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:53:59,020 p=4786 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:55:04,354 p=4866 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 01:55:04,354 p=4866 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 01:55:04,363 p=4866 u=hmizuno |  Parsed /home/hmizuno/git/study-ansible/copy/hosts inventory source with ini plugin
+2018-12-23 01:55:04,598 p=4866 u=hmizuno |  PLAYBOOK: setup.yml ************************************************************
+2018-12-23 01:55:04,599 p=4866 u=hmizuno |  1 plays in setup.yml
+2018-12-23 01:55:04,625 p=4866 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:55:04,634 p=4866 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:55:04,940 p=4866 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-12-23 01:55:05,024 p=4866 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", 
+    "unreachable": true
+}
+2018-12-23 01:55:05,026 p=4866 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:55:05,026 p=4866 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:55:05,026 p=4866 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:58:25,814 p=5088 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:58:25,822 p=5088 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:58:26,219 p=5088 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+2018-12-23 01:58:26,221 p=5088 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:58:26,221 p=5088 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:58:26,221 p=5088 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:58:35,154 p=5110 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 01:58:35,154 p=5110 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 01:58:35,161 p=5110 u=hmizuno |  Parsed /home/hmizuno/git/study-ansible/copy/hosts inventory source with ini plugin
+2018-12-23 01:58:35,414 p=5110 u=hmizuno |  PLAYBOOK: setup.yml ************************************************************
+2018-12-23 01:58:35,414 p=5110 u=hmizuno |  1 plays in setup.yml
+2018-12-23 01:58:35,442 p=5110 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:58:35,451 p=5110 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:58:35,774 p=5110 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-12-23 01:58:35,856 p=5110 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", 
+    "unreachable": true
+}
+2018-12-23 01:58:35,858 p=5110 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:58:35,858 p=5110 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:58:35,858 p=5110 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2018-12-23 01:59:35,822 p=5182 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 01:59:35,822 p=5182 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 01:59:35,830 p=5182 u=hmizuno |  Parsed /home/hmizuno/git/study-ansible/copy/hosts inventory source with ini plugin
+2018-12-23 01:59:36,089 p=5182 u=hmizuno |  PLAYBOOK: setup.yml ************************************************************
+2018-12-23 01:59:36,090 p=5182 u=hmizuno |  1 plays in setup.yml
+2018-12-23 01:59:36,117 p=5182 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 01:59:36,126 p=5182 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 01:59:36,489 p=5182 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-12-23 01:59:38,841 p=5182 u=hmizuno |  fatal: [10.0.1.5]: FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to 10.0.1.5 closed.\r\n", 
+    "module_stdout": "sudo: a password is required\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 1
+}
+2018-12-23 01:59:38,843 p=5182 u=hmizuno |  	to retry, use: --limit @/home/hmizuno/git/study-ansible/copy/setup.retry
+
+2018-12-23 01:59:38,843 p=5182 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 01:59:38,844 p=5182 u=hmizuno |  10.0.1.5                   : ok=0    changed=0    unreachable=0    failed=1   
+2018-12-23 02:00:29,852 p=5279 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 02:00:29,860 p=5279 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 02:00:33,216 p=5279 u=hmizuno |  ok: [10.0.1.5]
+2018-12-23 02:00:33,222 p=5279 u=hmizuno |  TASK [check id] ****************************************************************
+2018-12-23 02:00:34,585 p=5279 u=hmizuno |  changed: [10.0.1.5]
+2018-12-23 02:00:34,773 p=5279 u=hmizuno |  TASK [copy file (local -> remote)] *********************************************
+2018-12-23 02:00:37,370 p=5279 u=hmizuno |  changed: [10.0.1.5]
+2018-12-23 02:00:37,376 p=5279 u=hmizuno |  TASK [copy file (remote -> remote)] ********************************************
+2018-12-23 02:00:38,644 p=5279 u=hmizuno |  changed: [10.0.1.5]
+2018-12-23 02:00:38,651 p=5279 u=hmizuno |  TASK [copy directory (local -> remote)] ****************************************
+2018-12-23 02:00:41,106 p=5279 u=hmizuno |  changed: [10.0.1.5]
+2018-12-23 02:00:41,108 p=5279 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 02:00:41,108 p=5279 u=hmizuno |  10.0.1.5                   : ok=5    changed=4    unreachable=0    failed=0   
+2018-12-23 02:01:20,341 p=5402 u=hmizuno |  ansible-playbook 2.4.2.0
+  config file = /home/hmizuno/git/study-ansible/copy/ansible.cfg
+  configured module search path = [u'/home/hmizuno/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-12-23 02:01:20,342 p=5402 u=hmizuno |  Using /home/hmizuno/git/study-ansible/copy/ansible.cfg as config file
+2018-12-23 02:01:20,349 p=5402 u=hmizuno |  Parsed /home/hmizuno/git/study-ansible/copy/hosts inventory source with ini plugin
+2018-12-23 02:01:20,584 p=5402 u=hmizuno |  PLAYBOOK: setup.yml ************************************************************
+2018-12-23 02:01:20,585 p=5402 u=hmizuno |  1 plays in setup.yml
+2018-12-23 02:01:20,611 p=5402 u=hmizuno |  PLAY [hello ansible ( date ... )] **********************************************
+2018-12-23 02:01:20,619 p=5402 u=hmizuno |  TASK [Gathering Facts] *********************************************************
+2018-12-23 02:01:20,924 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-12-23 02:01:22,931 p=5402 u=hmizuno |  ok: [10.0.1.5]
+2018-12-23 02:01:22,932 p=5402 u=hmizuno |  META: ran handlers
+2018-12-23 02:01:22,937 p=5402 u=hmizuno |  TASK [check id] ****************************************************************
+2018-12-23 02:01:22,937 p=5402 u=hmizuno |  task path: /home/hmizuno/git/study-ansible/copy/setup.yml:8
+2018-12-23 02:01:23,067 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+2018-12-23 02:01:24,278 p=5402 u=hmizuno |  changed: [10.0.1.5] => {
+    "changed": true, 
+    "cmd": "id", 
+    "delta": "0:00:00.029371", 
+    "end": "2018-12-23 02:01:24.199801", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "id", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "stdin": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 0, 
+    "start": "2018-12-23 02:01:24.170430", 
+    "stderr": "", 
+    "stderr_lines": [], 
+    "stdout": "uid=1000(hmizuno) gid=1000(hmizuno) groups=1000(hmizuno) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023", 
+    "stdout_lines": [
+        "uid=1000(hmizuno) gid=1000(hmizuno) groups=1000(hmizuno) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+    ]
+}
+2018-12-23 02:01:24,285 p=5402 u=hmizuno |  TASK [copy file (local -> remote)] *********************************************
+2018-12-23 02:01:24,285 p=5402 u=hmizuno |  task path: /home/hmizuno/git/study-ansible/copy/setup.yml:11
+2018-12-23 02:01:24,594 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/stat.py
+2018-12-23 02:01:25,723 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/file.py
+2018-12-23 02:01:26,780 p=5402 u=hmizuno |  ok: [10.0.1.5] => {
+    "changed": false, 
+    "checksum": "a2b2ede1fb20ce08a61b089bbf97e0e1c8d70bbb", 
+    "diff": {
+        "after": {
+            "path": "/tmp/remote_file"
+        }, 
+        "before": {
+            "path": "/tmp/remote_file"
+        }
+    }, 
+    "gid": 1000, 
+    "group": "hmizuno", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp/remote_file", 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "local_file", 
+            "owner": null, 
+            "path": "/tmp/remote_file", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "local_file", 
+            "state": "file", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0664", 
+    "owner": "hmizuno", 
+    "path": "/tmp/remote_file", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 13, 
+    "state": "file", 
+    "uid": 1000
+}
+2018-12-23 02:01:26,786 p=5402 u=hmizuno |  TASK [copy file (remote -> remote)] ********************************************
+2018-12-23 02:01:26,786 p=5402 u=hmizuno |  task path: /home/hmizuno/git/study-ansible/copy/setup.yml:16
+2018-12-23 02:01:26,947 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/copy.py
+2018-12-23 02:01:28,082 p=5402 u=hmizuno |  ok: [10.0.1.5] => {
+    "changed": false, 
+    "checksum": "c8a61b2e1b6f78fbb7d5e664b92ecd0784b7991d", 
+    "dest": "/tmp/remote_passwd_file", 
+    "gid": 1000, 
+    "group": "hmizuno", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": false, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp/remote_passwd_file", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": true, 
+            "group": null, 
+            "local_follow": null, 
+            "mode": null, 
+            "original_basename": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": true, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "/etc/passwd", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "md5sum": "8d55708aa46a9429248f977f3d410998", 
+    "mode": "0664", 
+    "owner": "hmizuno", 
+    "secontext": "unconfined_u:object_r:user_tmp_t:s0", 
+    "size": 1144, 
+    "src": "/etc/passwd", 
+    "state": "file", 
+    "uid": 1000
+}
+2018-12-23 02:01:28,089 p=5402 u=hmizuno |  TASK [copy directory (local -> remote)] ****************************************
+2018-12-23 02:01:28,089 p=5402 u=hmizuno |  task path: /home/hmizuno/git/study-ansible/copy/setup.yml:22
+2018-12-23 02:01:28,295 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/stat.py
+2018-12-23 02:01:29,331 p=5402 u=hmizuno |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/files/file.py
+2018-12-23 02:01:30,355 p=5402 u=hmizuno |  ok: [10.0.1.5] => {
+    "changed": false, 
+    "checksum": "a2b2ede1fb20ce08a61b089bbf97e0e1c8d70bbb", 
+    "diff": {
+        "after": {
+            "path": "/tmp/remote_dir/local_file"
+        }, 
+        "before": {
+            "path": "/tmp/remote_dir/local_file"
+        }
+    }, 
+    "gid": 1000, 
+    "group": "hmizuno", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp/remote_dir/", 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "local_file", 
+            "owner": null, 
+            "path": "/tmp/remote_dir/local_file", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "local_file", 
+            "state": "file", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0664", 
+    "owner": "hmizuno", 
+    "path": "/tmp/remote_dir/local_file", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 13, 
+    "state": "file", 
+    "uid": 1000
+}
+2018-12-23 02:01:30,356 p=5402 u=hmizuno |  META: ran handlers
+2018-12-23 02:01:30,356 p=5402 u=hmizuno |  META: ran handlers
+2018-12-23 02:01:30,357 p=5402 u=hmizuno |  PLAY RECAP *********************************************************************
+2018-12-23 02:01:30,357 p=5402 u=hmizuno |  10.0.1.5                   : ok=5    changed=1    unreachable=0    failed=0   

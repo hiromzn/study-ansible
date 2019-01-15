@@ -1,0 +1,26 @@
+---
+- name: hello ansible ( date ... )
+  hosts: managed_node
+#  user: ansible
+#  become: true
+
+  tasks:
+    - name: check id
+      shell: id
+
+    - name: copy file (local -> remote)
+      copy:
+        src: "local_file"
+        dest: "/tmp/remote_file"
+
+    - name: copy file (remote -> remote)
+      copy:
+        src: "/etc/passwd"
+        remote_src: True
+        dest: "/tmp/remote_passwd_file"
+
+    - name: copy directory (local -> remote)
+      copy:
+        src: "testdir/"
+        dest: "/tmp/remote_dir"
+

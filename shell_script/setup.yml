@@ -1,0 +1,14 @@
+---
+- name: shell scirpt sample
+  hosts: managed_node
+  user: ansible
+
+  tasks:
+    - name: copy scirpt
+      copy:
+        src: hello.sh
+        dest: /tmp/hello.sh
+
+    - name: run shell scirpt hello.sh
+      shell: sh /tmp/hello.sh >/tmp/hello.sh.output
+

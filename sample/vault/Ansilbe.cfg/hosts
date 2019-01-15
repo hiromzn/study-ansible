@@ -1,0 +1,5 @@
+#
+# nested children
+# 
+[all]
+localhost ansible_connection=local

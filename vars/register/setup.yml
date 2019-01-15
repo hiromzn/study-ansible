@@ -1,0 +1,10 @@
+---
+- name: hello ansible ( date ... )
+  hosts: managed_node
+
+  tasks:
+    - name: capture output of whoami command
+      command: id -un
+      register: login
+    - debug: var=login
+    - debug: msg="id stdout {{ login.stdout }}"

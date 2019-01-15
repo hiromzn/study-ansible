@@ -1,0 +1,10 @@
+---
+- name: hello ansible ( date ... )
+  hosts: foo
+#  hosts: system_A
+#  hosts: all
+  user: hmizuno
+
+  tasks:
+    - name: hello server
+      shell: date

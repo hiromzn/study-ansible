@@ -1,0 +1,29 @@
+#
+# nested children
+# 
+[foo:children]
+bar
+
+[bar:children]
+web
+app
+
+#
+# children (nested group)
+#
+[system_A:children]
+web
+app
+db
+
+#
+# group
+#
+[web]
+mytest1 ansible_ssh_host=n01.eastus.cloudapp.azure.com ansible_ssh_port=22
+
+[app]
+mytest2 ansible_ssh_host=n01.eastus.cloudapp.azure.com ansible_ssh_port=22
+
+[db]
+node3

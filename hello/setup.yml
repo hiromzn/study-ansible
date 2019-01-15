@@ -1,0 +1,8 @@
+---
+- name: hello ansible ( date ... )
+  hosts: managed_node
+  user: hmizuno
+
+  tasks:
+    - name: hello server
+      shell: date >>now.txt
