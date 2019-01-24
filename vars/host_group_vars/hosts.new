@@ -1,16 +1,18 @@
+[all:children]
+production
+staging
+
 [production:children]
 web
 app
-db1
+db
+node3
 
 [staging:children]
 webs
 apps
-stg2
-db2
-
-[stg2:children]
-db2
+db
+node4
 
 [web]
 mytest1
@@ -24,8 +26,5 @@ mytest1s
 [apps]
 mytest2s
 
-[db1]
-node3
-
-[db2]
-node4
+[db]
+node5
