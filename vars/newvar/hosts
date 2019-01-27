@@ -1,0 +1,11 @@
+[all:children]
+production
+staging
+
+[production]
+prod1
+prod2
+
+[staging]
+stag1
+stag2

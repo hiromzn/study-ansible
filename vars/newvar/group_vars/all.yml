@@ -1,0 +1,3 @@
+ansible_ssh_port: 22
+myvar1: "var1:all"
+myvar2: "var2:all"

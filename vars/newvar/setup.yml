@@ -1,0 +1,35 @@
+---
+- name: hello ansible ( date ... )
+  hosts: production
+  user: hmizuno
+  vars:
+    topvar1: "topvar1"
+    myvar1: "myvar1:in_top"
+
+  tasks:
+    - name: do date
+      shell: date
+      vars:
+        taskvar1: "taskvar1"
+    # - debug: var=hostvars
+    - debug: var=topvar1
+    - debug: var=taskvar1
+    - debug: var=taskvar2
+    - debug: var=myvar1
+    - debug: var=myvar2
+    - debug: var=hostvars.prod1.ansible_env.HOME
+    - debug: var=hostvars.prod2.ansible_env.HOME
+
+    # - name: do ls
+      # shell: ls
+      # vars:
+        # myvar1: "myvar1:in_task2"
+        # taskvar2: "taskvar2"
+    # # - debug: var=hostvars
+    # - debug: var=topvar1
+    # - debug: var=taskvar1
+    # - debug: var=taskvar2
+    # - debug: var=myvar1
+    # - debug: var=myvar2
+    # - debug: var=hostvars.prod1.ansible_env.HOME
+    # - debug: var=hostvars.prod2.ansible_env.HOME
