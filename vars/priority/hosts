@@ -4,7 +4,7 @@ staging
 
 [production]
 prod1
-prod2
+#prod2
 
 [staging]
 stag1

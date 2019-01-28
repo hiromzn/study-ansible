@@ -1,0 +1,27 @@
+---
+- name: hello ansible
+  hosts: production
+  user: hmizuno
+  vars:
+    topvar1: "topvar1"
+    myvar1: "defined_in_top"
+
+  tasks:
+    - name: do echo
+      shell: echo {{ topvar1 }}:{{ taskvar1 }}
+      register: ret
+      vars:
+        taskvar1: "taskvar1"
+
+    - name: print stdout of echo
+      debug:
+        msg: "echo.stdout = {{ ret.stdout }}"
+
+    # - debug: var=hostvars
+    # - debug: var=hostvars.prod1.ansible_env.HOME
+    - debug: var=topvar1
+    - debug: var=taskvar1
+    - debug: var=myvar1
+    - debug: var=myvar2
+
+
