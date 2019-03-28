@@ -1,0 +1,36 @@
+---
+- name: loop test
+  hosts: all
+  user: hmizuno
+
+  vars:
+    mylist:
+      - ext1
+      - ext2
+      - ext3
+    append_exts:
+      - ext4
+      - ext5
+    dict: [ { uid: 111, gid: 222 } ]
+    add_dict: [ { uid: 1234, gid: 333 } ]
+
+  tasks:
+    - name: '{{ append_exts }}'
+      debug: var=append_exts
+
+    - name: '{{ mylist }}'
+      debug: var=mylist
+
+    - name: append
+      set_fact:
+        mylist: "{{ mylist + append_exts }}"
+
+    - name: '{{ mylist }}'
+      debug: var=mylist
+
+    - name: "append dict {{ dict }}"
+      set_fact:
+        dict: '{{ dict + add_dict }}'
+
+    - name: 'new dict: {{ dict }}'
+      debug: var=dict
