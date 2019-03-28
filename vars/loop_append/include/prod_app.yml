@@ -1,8 +1,0 @@
-- name: do
-  command: echo 'prod_{{ prod_name }}:RESULTS'
-  register: lsout
-
-- name: "set_fact ( {{ prod_name }}, {{ target_state }} )"
-  set_fact:
-    res: "{{ res + [ { 'prod': prod_name, 'stdout': lsout.stdout } ] }}"
-

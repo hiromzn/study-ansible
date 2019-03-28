@@ -1,0 +1,8 @@
+- name: "check {{ prod_name }}:{{ command_name }}:{{ target_state }}"
+  command: echo 'check:{{ prod_name }}:{{ command_name }}:{{ target_state }}:RESULTS'
+  register: checkres
+
+- name: "add results of {{ prod_name }}"
+  set_fact:
+    res: "{{ res + [ { 'prod': prod_name, 'stdout': checkres.stdout } ] }}"
+
