@@ -1,0 +1,29 @@
+---
+- name: loop test
+  hosts: all
+  user: hmizuno
+
+  vars:
+    prod_list:
+      - "web"
+      - "app"
+      - "db"
+
+  tasks:
+    - name: set initial element
+      set_fact:
+        res: []
+        # res: [ { prod: "p1", stdout: 0 } ]
+
+    - name: Include Tasks (host="{{ ansible_hostname }}", os="{{ ansible_os_family }}", command=status)
+      include_tasks: include/prod_{{ item }}.yml
+      vars:
+        prod_name: "{{ item }}"
+        command_name: status
+        target_state: running
+      with_items: "{{ prod_list }}"
+      loop_control:
+        loop_var: item
+
+    - name: print
+      debug: var=res
