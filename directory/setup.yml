@@ -1,8 +1,6 @@
 ---
 - name: hello ansible ( date ... )
   hosts: managed_node
-  user: ansible
-  become: true
 
   tasks:
     - name: check id
@@ -11,7 +9,7 @@
       file:
         path: "/tmp/ansible-study/child"
         state: directory
-        owner: root
-        group: daemon
+        # owner: root
+        # group: daemon
         mode: 0750
 

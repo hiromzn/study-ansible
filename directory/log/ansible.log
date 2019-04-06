@@ -34,3 +34,40 @@
 2017-07-20 02:36:37,288 p=26737 u=ansible |  ok: [node1]
 2017-07-20 02:36:37,297 p=26737 u=ansible |  PLAY RECAP *********************************************************************
 2017-07-20 02:36:37,300 p=26737 u=ansible |  node1                      : ok=3    changed=1    unreachable=0    failed=0   
+2019-04-07 08:28:49,921 p=11736 u=hmizuno |  PLAY [hello ansible ( date ... )] *************************************************************
+2019-04-07 08:28:49,936 p=11736 u=hmizuno |  TASK [Gathering Facts] ************************************************************************
+2019-04-07 08:28:50,105 p=11736 u=hmizuno |  fatal: [node1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host node1 port 22: Permission denied\r\n", "unreachable": true}
+2019-04-07 08:28:50,107 p=11736 u=hmizuno |  	to retry, use: --limit @/Users/hmizuno/git/study-ansible/directory/setup.retry
+
+2019-04-07 08:28:50,107 p=11736 u=hmizuno |  PLAY RECAP ************************************************************************************
+2019-04-07 08:28:50,108 p=11736 u=hmizuno |  node1                      : ok=0    changed=0    unreachable=1    failed=0   
+2019-04-07 08:30:04,671 p=11758 u=hmizuno |  PLAY [hello ansible ( date ... )] *************************************************************
+2019-04-07 08:30:04,681 p=11758 u=hmizuno |  TASK [Gathering Facts] ************************************************************************
+2019-04-07 08:30:04,745 p=11758 u=hmizuno |  fatal: [node1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused\r\n", "unreachable": true}
+2019-04-07 08:30:04,747 p=11758 u=hmizuno |  	to retry, use: --limit @/Users/hmizuno/git/study-ansible/directory/setup.retry
+
+2019-04-07 08:30:04,747 p=11758 u=hmizuno |  PLAY RECAP ************************************************************************************
+2019-04-07 08:30:04,748 p=11758 u=hmizuno |  node1                      : ok=0    changed=0    unreachable=1    failed=0   
+2019-04-07 08:32:16,373 p=11787 u=hmizuno |  PLAY [hello ansible ( date ... )] *************************************************************
+2019-04-07 08:32:16,383 p=11787 u=hmizuno |  TASK [Gathering Facts] ************************************************************************
+2019-04-07 08:32:16,449 p=11787 u=hmizuno |  fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused\r\n", "unreachable": true}
+2019-04-07 08:32:16,450 p=11787 u=hmizuno |  	to retry, use: --limit @/Users/hmizuno/git/study-ansible/directory/setup.retry
+
+2019-04-07 08:32:16,451 p=11787 u=hmizuno |  PLAY RECAP ************************************************************************************
+2019-04-07 08:32:16,451 p=11787 u=hmizuno |  localhost                  : ok=0    changed=0    unreachable=1    failed=0   
+2019-04-07 08:33:04,792 p=11806 u=hmizuno |  PLAY [hello ansible ( date ... )] *************************************************************
+2019-04-07 08:33:04,803 p=11806 u=hmizuno |  TASK [Gathering Facts] ************************************************************************
+2019-04-07 08:33:05,450 p=11806 u=hmizuno |  fatal: [node1]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2019-04-07 08:33:05,452 p=11806 u=hmizuno |  	to retry, use: --limit @/Users/hmizuno/git/study-ansible/directory/setup.retry
+
+2019-04-07 08:33:05,452 p=11806 u=hmizuno |  PLAY RECAP ************************************************************************************
+2019-04-07 08:33:05,453 p=11806 u=hmizuno |  node1                      : ok=0    changed=0    unreachable=0    failed=1   
+2019-04-07 08:33:44,218 p=11835 u=hmizuno |  PLAY [hello ansible ( date ... )] *************************************************************
+2019-04-07 08:33:44,228 p=11835 u=hmizuno |  TASK [Gathering Facts] ************************************************************************
+2019-04-07 08:33:45,244 p=11835 u=hmizuno |  ok: [node1]
+2019-04-07 08:33:45,261 p=11835 u=hmizuno |  TASK [check id] *******************************************************************************
+2019-04-07 08:33:45,678 p=11835 u=hmizuno |  changed: [node1]
+2019-04-07 08:33:45,692 p=11835 u=hmizuno |  TASK [make directory] *************************************************************************
+2019-04-07 08:33:46,125 p=11835 u=hmizuno |  changed: [node1]
+2019-04-07 08:33:46,128 p=11835 u=hmizuno |  PLAY RECAP ************************************************************************************
+2019-04-07 08:33:46,128 p=11835 u=hmizuno |  node1                      : ok=3    changed=2    unreachable=0    failed=0   
