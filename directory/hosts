@@ -1,4 +1,2 @@
 [managed_node]
 node1 ansible_host=localhost ansible_connection=local
-
-# localhost ansible_connection=local
