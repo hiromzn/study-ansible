@@ -1,0 +1,6 @@
+- name: evening server
+  shell: echo "evening ansible with var = {{ myvar }} {{ commonvar }} !!!"
+  register: results
+
+- name: print stdout
+  debug: msg="stdout = {{ results.stdout }}"

@@ -1,5 +1,5 @@
 - name: hello server
-  shell: echo "helllo ansible with var = {{ myvar }} !!!"
+  shell: echo "helllo ansible with var = {{ myvar }} {{ commonvar }} !!!"
   register: results
 
 - name: print stdout
