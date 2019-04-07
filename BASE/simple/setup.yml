@@ -1,0 +1,12 @@
+---
+- name: hello ansible ( date ... )
+  hosts: all
+  user: hmizuno
+
+  tasks:
+    - name: hello server
+      shell: echo "helllo ansible"
+      register: results
+
+    - name: print stdout
+      debug: msg="stdout = {{ results.stdout }}"

@@ -1,0 +1,6 @@
+- name: hello server
+  shell: echo "helllo ansible with var = {{ myvar }} !!!"
+  register: results
+
+- name: print stdout
+  debug: msg="stdout = {{ results.stdout }}"

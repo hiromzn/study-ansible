@@ -1,0 +1,6 @@
+---
+- name: hello ansible ( date ... )
+  hosts: all
+  roles:
+    - morning
+    - hello
