@@ -1,0 +1,24 @@
+common_host1 ansible_host=localhost ansible_connection=local instname=INST_1
+common_host2 ansible_host=localhost ansible_connection=local instname=INST_2
+web_host1 ansible_host=localhost ansible_connection=local webport=8081
+web_host2 ansible_host=localhost ansible_connection=local webport=8082
+db_host1 ansible_host=localhost ansible_connection=local dbport=9901
+db_host2 ansible_host=localhost ansible_connection=local dbport=9902
+
+[all]
+common
+web
+db
+
+[web:childlen]
+web_host1
+web_host2
+
+[db:childlen]
+db_host1
+db_host2
+
+[common:childlen]
+commcon_host1
+commcon_host2
+
