@@ -1,0 +1,29 @@
+---
+- name: hello ansible ( date ... )
+  hosts: all
+  vars:
+    myvar: "defined in TOP/main.yml"
+    prod_list:
+      - "jboss"
+      - "postgre"
+  roles:
+    - common
+    #- morning
+    - hello
+    #- evening
+
+  tasks:
+    - name: set initial element
+      set_fact:
+        res: []
+
+    - name: "include task sample"
+      include_tasks: "include/prod_{{ item }}.yml"
+      vars:
+        prod_name: "{{ item }}"
+      with_items: "{{ prod_list }}"
+      loop_control:
+        loop_var: item
+
+    - name: print results of include_tasks
+      debug: var=res

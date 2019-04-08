@@ -1,0 +1,7 @@
+- name: "product = {{ prod_name }}"
+  command: echo 'Execution of {{ prod_name }}'
+  register: results
+
+- name: "add execution results of {{ prod_name }}"
+  set_fact:
+    res: "{{ res + [ { 'prod': prod_name, 'stdout': results.stdout } ] }}"
