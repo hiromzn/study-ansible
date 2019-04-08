@@ -1,0 +1,8 @@
+---
+- name: alias sample
+  hosts: all
+  user: hmizuno
+
+  tasks:
+    - name: install instance by two aliases
+      debug: msg="install instance = {{ instname }} on path = /opt/home/{{ instname }}"

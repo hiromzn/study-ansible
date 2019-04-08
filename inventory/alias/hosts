@@ -1,0 +1,2 @@
+host1 ansible_host=localhost ansible_connection=local instname=alias1_of_local
+host2 ansible_host=localhost ansible_connection=local instname=alias2_of_local
