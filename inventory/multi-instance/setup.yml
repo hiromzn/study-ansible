@@ -1,9 +1,0 @@
----
-- name: multi instance sample
-  hosts: all
-  user: hmizuno
-
-  tasks:
-    - name: install instance {{ instname }}
-      debug: msg="install instance = {{ instname }} on path = /opt/home/{{ instname }}"
-
